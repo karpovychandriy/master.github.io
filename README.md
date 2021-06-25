@@ -1,2 +1,2 @@
 # master.github.io
-progect#1
+project#1
