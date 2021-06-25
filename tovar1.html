@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Document</title>
+    <!-- Vendor styles plugins -->
+    <!-- build:css css/plugins.css -->
+    <link rel="stylesheet" href="vendor/reset-css/reset.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <!-- endbuild -->
+    <!-- Styles application -->
+    <link rel="stylesheet" href="css/style.css" inline>
+</head>
+<body>
+    <header class="header sticky-top">
+        <div class="container1">
+            <div class="navbar navbar-expand-lg">
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <div class="navbar-toggler-icon">
+                        <span class="span1"></span>
+                    </div>
+                </button>
+    
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Агромайстер">
+                </a>
+    
+    
+    
+                <div class="nav-menu collapse navbar-collapse" id="navbarSupportedContent">
+                    <nav>
+                        <ul class="navbar-nav">
+    
+                            <li class="nav-menu__subtitle d-lg-none nav-item">
+                                <div class="nav-menu__subtitle-button">
+                                    <a href="#" class="nav-link">Регистрация</a>
+                                </div>
+                                <div>
+                                    <a href="authorization.html" class="nav-link">Войти</a>
+                                </div>
+                            </li>
+    
+                            <li class="nav-menu__contacts d-lg-none nav-item nav-item_border">
+                                <a href="#" class="nav-link">Поиск</a>
+                            </li>
+    
+                            <li class="nav-menu__contacts d-lg-none nav-item nav-item_border">
+                                <a href="#" class="nav-link">Контакты</a>
+                            </li>
+    
+                            <li class="nav-menu__contacts d-lg-none nav-item nav-item_border">
+                                <a href="#" class="nav-link">Новости</a>
+                            </li>
+    
+                            <li aria-expanded="false" class="nav-menu__contacts-dropdown d-none d-lg-flex nav-item">
+                                <a class="nav-link" href="#" id="contactsDrop" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    +38 (050) 954-88-05
+                                    <div class="nav-link-icon d-inline-flex">
+                                        <svg class="icon-svg icon-svg-upIcon upIcon1"><use xlink:href="img/sprite.svg#upIcon"></use></svg>
+                                    </div>
+                                </a>
+    
+                                <div class="dropdown-menu dropdown-menu_contacts" aria-labelledby="contactsDrop">
+                                    <a class="dropdown-item" href="tel:+38 (050) 954-88-05">+38 (050) 954-88-05</a>
+                                    <a class="dropdown-item" href="tel:+38 (067) 715-82-11">+38 (067) 715-82-11</a>
+                                    <a class="dropdown-item" href="tel:+38 (0332) 76-90-91">+38 (0332) 76-90-91</a>
+                                </div>
+                            </li>
+    
+                            <li class="nav-item d-none d-lg-flex" id="oCamp">
+                                <a href="novunu2.html" class="nav-link nav-item_border1">О компании</a>
+                            </li>
+    
+                            <li class="nav-item d-none d-lg-flex">
+                                <a class="nav-link" href="#" id="catalogDrop" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Каталог
+                                    <div class="nav-link-icon d-inline-flex">
+                                        <svg class="icon-svg icon-svg-upIcon upIcon2"><use xlink:href="img/sprite.svg#upIcon"></use></svg>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu_catalog" aria-labelledby="catalogDrop">
+                                    <a class="dropdown-item" href="tovar1.html">Категория 1</a>
+                                    <a class="dropdown-item" href="#">Категория 2</a>
+                                    <a class="dropdown-item" href="#">Категория 3</a>
+                                    <a class="dropdown-item" href="#">Категория 4</a>
+                                    <a class="dropdown-item" href="#">Категория 5</a>
+                                </div>
+                            </li>
+    
+                            <li class="nav-item d-none d-lg-flex">
+                                <a href="#" class="nav-link nav-item_border1">Акции</a>
+                            </li>
+    
+                            <li class="nav-item d-none d-lg-flex">
+                                <a href="#" class="nav-link nav-item_border1">Отзывы</a>
+                            </li>
+    
+                            <li class="nav-menu__contacts d-lg-none nav-item nav-item_border">
+                                <a href="novunu2.html" class="nav-link">О компании</a>
+                            </li>
+    
+                            <li class="nav-menu__contacts d-lg-none nav-item nav-item_border">
+                                <a href="#" class="nav-link">Каталог</a>
+                            </li>
+    
+                            <li class="nav-item d-lg-none nav-item_border">
+                                <a href="#" class="nav-link">Акции</a>
+                            </li>
+    
+                            <li class="nav-menu__contacts d-lg-none nav-item nav-item_border">
+                                <a href="#" class="nav-link">Статьи</a>
+                            </li>
+    
+                            <li class="nav-item d-none d-lg-flex">
+                                <button class="nav-item button button_header" data-toggle="modal" data-target="#zvonok">
+                                    Заказать звонок
+                                </button>
+                            </li>
+    
+    
+                        </ul>
+    
+                    </nav>
+                </div>
+            </div>
+    
+            <div class="nav-out nav-item nav-item_icon1 d-none d-lg-flex">
+    
+                <a class="nav-link" href="#" id="loginDrop" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <svg class="icon-svg icon-svg-Icon_closed icon icon1"><use xlink:href="img/sprite.svg#Icon_closed"></use></svg>
+                </a>
+    
+                <div class="dropdown-menu dropdown-menu_login" data-display="static" x-placement="bottom"
+                    aria-labelledby="loginDrop">
+                    <a class="dropdown-item" href="#">Регистрация</a>
+                    <a class="dropdown-item" href="authorization.html">Войти</a>
+                </div>
+            </div>
+    
+            <div class="nav-out nav-item nav-item_icon2">
+                <a href="#">
+                    <svg class="icon-svg icon-svg-Union icon icon2"><use xlink:href="img/sprite.svg#Union"></use></svg>
+                </a>
+            </div>
+    
+            <div class="nav-out nav-item nav-item_icon3">
+                <a href="#">
+                    <svg class="icon-svg icon-svg-Union1 icon icon3"><use xlink:href="img/sprite.svg#Union1"></use></svg>
+                </a>
+    
+                <span id="tovarBadge" class="badge badge-header">12</span>
+            </div>
+        </div>
+    
+        <figure d-none d-md-block>
+            <button class="button-top" id="buttonUp1">
+                <svg class="icon-svg icon-svg-buttonUp upButton"><use xlink:href="img/sprite.svg#buttonUp"></use></svg>
+            </button>
+        </figure>
+    
+    
+        <div class="modal-zvonok modal fade" id="zvonok" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-zvonok__content modal-content">
+                    <div class="modal-zvonok__header modal-header">
+                        <button type="button modal-zvonok__header-close" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span class="modal-close" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-zvonok__body modal-body">
+                        <div class="modal-zvonok__left">
+                            <ul class="modal-zvonok__phone">
+                                <li>
+                                    <a href="tel:+38 (066) 089-30-96">+38 (066) 089-30-96</a>
+                                </li>
+    
+                                <div>
+                                    <a href="tel:+38 (067) 715-82-11">+38 (067) 715-82-11</a>
+                                </div>
+    
+                                <div>
+                                    <a href="tel:+38 (0332) 76-90-91">+38 (0332) 76-90-91</a>
+                                </div>
+    
+                            </ul>
+                            <div class="modal-zvonok__description">
+                                Наши номера телефонов
+                            </div>
+                        </div>
+    
+                        <div class="modal-zvonok__right">
+    
+                            <form action="post">
+                                <input type="text" data-mask="+38 (000) 000 00 00" placeholder="+38 ( ___ ) - ___ - __ - __"
+                                    data-mask-clearifnotmatch="true" name="phone" autocomplete="off" maxlength="19">
+    
+                                <input type="text" placeholder="Ваше имя" name="name">
+    
+                                <button type="submit" class="modal-zvonok__button button button_outline ">Заказать
+                                    звонок</button>
+                            </form>
+    
+                        </div>
+                    </div>
+    
+                    <div class="modal-zvonok__footer"></div>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+    
+    </header>
+
+<main>
+    <section class="first-tovar1">
+
+        <div class="container1">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Категории товаров</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Торф Огородник® верховой 9л.</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 tovar-img d-none d-md-flex">
+                    <div class="add">
+                        <div class="tovar1-slider swiper-container">
+                            <div class="tovar1-slider__wrapper swiper-wrapper d-flex">
+                
+                                <div class="tovar1-slider__slide swiper-slide">
+                                    <img src="img/tovar/tovar1.png" />
+                                </div>
+                
+                                <div class="tovar1-slider__slide swiper-slide">
+                                    <img src="img/tovar/tovar1.png" />
+                                </div>
+                
+                                <div class="tovar1-slider__slide swiper-slide">
+                                    <img src="img/tovar/tovar1.png" />
+                                </div>
+                
+                            </div>
+            
+                        </div>
+                
+                        <div thumbsSlider="" class="tovar2-slider swiper-container">
+                            <div class="tovar2-slider__wrapper swiper-wrapper">
+                
+                                <div class="tovar2-slider__slide swiper-slide">
+                                    <img src="img/tovar/tovar1.png" />
+                                </div>
+                
+                                <div class="tovar2-slider__slide swiper-slide">
+                                    <img src="img/tovar/tovar1.png" />
+                                </div>
+                
+                                <div class="tovar2-slider__slide swiper-slide">
+                                    <img src="img/tovar/tovar1.png" />
+                                </div>
+                
+                            </div>
+                
+                        
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-6 d-none d-lg-flex">
+                        <div class="tovar-descr">
+                            <div class="tovar-descr__reiting">
+                                <div class="tovar-descr__reiting-stars">
+                                    <div class="card__stars">
+                                    <div class="card__stars-item">
+                                        <svg class="icon-svg icon-svg-star star1 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                    </div>
+
+                                    <div class="card__stars-item">
+                                        <svg class="icon-svg icon-svg-star star2 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                    </div>
+
+                                    <div class="card__stars-item">
+                                        <svg class="icon-svg icon-svg-star star3 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                    </div>
+
+                                    <div class="card__stars-item">
+                                        <svg class="icon-svg icon-svg-star star4 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                    </div>
+
+                                    <div class="card__stars-item">
+                                        <svg class="icon-svg icon-svg-star star5"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="tovar-descr__reiting-people">Оценили 48 человек</div>
+                            </div>
+
+                            <h1 class="tovar-descr__title">Торф Огородник® верховой 9л.</h1>
+
+                            <div class="tovar-descr__available">
+                                <div class="tovar-descr__available-icon">
+                                    <svg class="icon-svg icon-svg-available-icon available-icon"><use xlink:href="img/sprite.svg#available-icon"></use></svg>
+                                </div>
+                                <div class="tovar-descr__available-text">Товар в наличии</div>
+                            </div>
+
+                            <div class="tovar-descr__price">
+                                <span class="tovar-descr__price-now">213 грн</span>
+                                <span class="tovar-descr__price-last">411 грн</span>
+                            </div>
+
+                            <div class="tovar-descr__description">
+                                Предназначено для выращивания рассады и цветочно-декоративных культур. 
+                            </div>
+
+                            <div class="tovar-descr__volume">
+                                <div class="tovar-descr__volume-text">Объем:</div>
+
+                                <div class="tovar-descr__volume-button btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn button-radio">
+                                    <input checked type="radio" name="options" id="option1"> 250 гр
+                                    </label>
+                                    <label class="btn button-radio">
+                                    <input type="radio" name="options" id="option2"> 100 гр
+                                    </label>
+                                    <label class="btn button-radio">
+                                    <input type="radio" name="options" id="option3"> 50 гр
+                                    
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="tovar-descr__pieces">
+                                <div class="tovar-descr__pieces-text">Количество шт.:</div>
+                                <div class="tovar-descr__pieces-button">
+                                    <button class="btn button-white small1">-</button>
+                                    <input type="number" class="btn button-white" placeholder="23">
+                                    <!--<button class="btn button-white">23</button>-->
+                                    <button class="btn button-white small1">+</button>
+                                </div>
+                            </div>
+
+                            <div class="tovar-descr__time">
+                                <div class="tovar-descr__time-text">Скидка истекает через:</div>
+                                <div id="demo" class="tovar-descr__time-timeout">12:34:12</div>
+                            </div>
+
+                            <div class="tovar-descr__button">
+                                <button class="button">Купить в один клик</button>
+                                <button class="button button_outline">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="tovar-slider swiper-container d-flex container d-md-none">
+            <div class="tovar-slider__wrapper swiper-wrapper d-flex">
+                <div class="tovar-slider__slide swiper-slide">
+                    
+                        <img src="img/tovar/tovar1.png" alt="tovar-photo" class="tovar-slider__icon">
+                    
+                </div>
+
+                <div class="tovar-slider__slide swiper-slide">
+                    
+                        <img src="img/tovar/tovar1.png" alt="tovar-photo" class="tovar-slider__icon">
+                    
+                </div>
+
+                <div class="tovar-slider__slide swiper-slide">
+                   
+                        <img src="img/tovar/tovar1.png" alt="tovar-photo" class="tovar-slider__icon">
+                   
+                </div>
+
+                <div class="tovar-slider__slide swiper-slide">
+                   
+                        <img src="img/tovar/tovar1.png" alt="tovar-photo" class="tovar-slider__icon">
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="d-block d-lg-none">
+                <div class="tovar-descr">
+    
+                    <div class="tovar-descr__title">Торф Огородник® верховой 9л.</div>
+    
+                    <div class="tovar-descr__available">
+                        <div class="card__stars">
+                            <div class="card__stars-item">
+                                <svg class="icon-svg icon-svg-star star1 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                            </div>
+    
+                            <div class="card__stars-item">
+                                <svg class="icon-svg icon-svg-star star2 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                            </div>
+    
+                            <div class="card__stars-item">
+                                <svg class="icon-svg icon-svg-star star3 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                            </div>
+    
+                            <div class="card__stars-item">
+                                <svg class="icon-svg icon-svg-star star4 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                            </div>
+    
+                            <div class="card__stars-item">
+                                <svg class="icon-svg icon-svg-star star5"><use xlink:href="img/sprite.svg#star"></use></svg>
+                            </div>
+                        </div>
+    
+                        <div class="tovar-descr__available-icon">
+                         <svg class="icon-svg icon-svg-available-icon available-icon"><use xlink:href="img/sprite.svg#available-icon"></use></svg>
+                        </div>
+                      <div class="tovar-descr__available-text">Товар в наличии</div>
+                   </div>
+    
+                   <div class="tovar-descr__price">
+                      <span class="tovar-descr__price-now">213 грн</span>
+                      <span class="tovar-descr__price-last">411 грн</span>
+                   </div>
+    
+                   <div class="tovar-descr__description">
+                      Предназначено для выращивания рассады и цветочно-декоративных культур. 
+                   </div>
+    
+                   <div class="tovar-descr__pieces">
+                      <div class="tovar-descr__pieces-button">
+                         <button class="btn button-white small1">-</button>
+                         <input type="number" class="btn button-white" placeholder="23">
+                         <!--<button class="btn button-white">23</button>-->
+                         <button class="btn button-white small1">+</button>
+                      </div>
+                      <div class="tovar-descr__time">
+                        <div class="tovar-descr__time-text">Скидка истекает через:</div>
+                        <div id="demo1" class="tovar-descr__time-timeout">12:34:12</div>
+                     </div>
+                   </div>
+    
+                   <div class="tovar-descr__button">
+                      <button class="button">Купить в один клик</button>
+                      <button class="button button_outline">Добавить в корзину</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+   </section>
+
+   <section class="tovar1-description tovar-description">
+        <div class="container1  d-none d-md-block">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active nav-item" data-toggle="tab" href="#description">Описание</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-item " data-toggle="tab" href="#comments">Отзывы</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane container active" id="description">
+                    <div class="tovar-description__text text">
+                        <div class="text__p">
+                        Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Повседневная практика показывает, что рамки и место обучения кадров требуют определения и уточнения форм развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.
+                        </div>
+        
+                        <div class="text__p d-none d-md-block">
+                        Таким образом сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны начало повседневной работы по формированию позиции в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании направлений прогрессивного развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий.
+                        </div>
+        
+                        <div class="text__p d-none d-md-block">
+                        Повседневная практика показывает, что рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Равным образом новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+                        </div>
+        
+                        <div class="text__p d-none d-md-block">
+                        Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки дальнейших направлений развития.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane container d-block fade" id="comments">
+                    <section class="comments">
+                        <div class="container1">
+                            <div class="text">
+                                <div class="text__title">Отзывы о компании</div>
+                            </div>
+                        </div>
+            
+                        <div class="comments-slider swiper-container container1">
+                            <div class="comments-slider__wrapper swiper-wrapper container1">
+            
+                                <div class="comments-slider__slide swiper-slide">
+                                    <div class="comments-slider__slide-item">
+                                        <div class="comments__data text_green">25 ноября 2019</div>
+                                        <div class="comments__title">
+                                            Качество товаров и скорость доставки восхищает!
+                                        </div>
+                                        <div class="comments__text">
+                                            Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                        </div>
+                                        <div class="comments__user">
+                                            <div class="comments__user-photo">
+                                                <img src="img/user.jpg" alt="user">
+                                            </div>
+                                            <div class="comments__user-name">Константин Хабенский</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="comments-slider__slide swiper-slide">
+                                    <div class="comments-slider__slide-item">
+                                        <div class="comments__data text_green">25 ноября 2019</div>
+                                        <div class="comments__title">
+                                            Качество товаров и скорость доставки восхищает!
+                                        </div>
+                                        <div class="comments__text">
+                                            Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                        </div>
+                                        <div class="comments__user">
+                                            <div class="comments__user-photo">
+                                                <img src="img/user.jpg" alt="user">
+                                            </div>
+                                            <div class="comments__user-name">Константин Хабенский</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="comments-slider__slide swiper-slide">
+                                    <div class="comments-slider__slide-item">
+                                        <div class="comments__data text_green">25 ноября 2019</div>
+                                        <div class="comments__title">
+                                            Качество товаров и скорость доставки восхищает!
+                                        </div>
+                                        <div class="comments__text">
+                                            Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                        </div>
+                                        <div class="comments__user">
+                                            <div class="comments__user-photo">
+                                                <img src="img/user.jpg" alt="user">
+                                            </div>
+                                            <div class="comments__user-name">Константин Хабенский</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="comments-slider__slide swiper-slide">
+                                    <div class="comments-slider__slide-item">
+                                        <div class="comments__data text_green">25 ноября 2019</div>
+                                        <div class="comments__title">
+                                            Качество товаров и скорость доставки восхищает!
+                                        </div>
+                                        <div class="comments__text">
+                                            Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                        </div>
+                                        <div class="comments__user">
+                                            <div class="comments__user-photo">
+                                                <img src="img/user.jpg" alt="user">
+                                            </div>
+                                            <div class="comments__user-name">Константин Хабенский</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="comments-slider__slide swiper-slide">
+                                    <div class="comments-slider__slide-item">
+                                        <div class="comments__data text_green">25 ноября 2019</div>
+                                        <div class="comments__title">
+                                            Качество товаров и скорость доставки восхищает!
+                                        </div>
+                                        <div class="comments__text">
+                                            Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                        </div>
+                                        <div class="comments__user">
+                                            <div class="comments__user-photo">
+                                                <img src="img/user.jpg" alt="user">
+                                            </div>
+                                            <div class="comments__user-name">Константин Хабенский</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="comments-slider__slide swiper-slide">
+                                    <div class="comments-slider__slide-item">
+                                        <div class="comments__data text_green">25 ноября 2019</div>
+                                        <div class="comments__title">
+                                            Качество товаров и скорость доставки восхищает!
+                                        </div>
+                                        <div class="comments__text">
+                                            Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                        </div>
+                                        <div class="comments__user">
+                                            <div class="comments__user-photo">
+                                                <img src="img/user.jpg" alt="user">
+                                            </div>
+                                            <div class="comments__user-name">Константин Хабенский</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+            
+                        <div class="comments__footer d-none d-md-block container1">
+                            Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Повседневная практика показывает
+                        </div>
+            
+                        
+                    </section>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="container1  d-block d-md-none">
+
+            
+
+           
+            <div>
+                <div class="tovar-description__text text">
+                    <div class="text__category">Описание</div>
+                    <div class="text__p">
+                    Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Повседневная практика показывает, что рамки и место обучения кадров требуют определения и уточнения форм развития. Повседневная практика показывает, что начало повседневной работы по...
+                    <p class="collapse-text">
+                        <a class="" data-toggle="collapse" href="#collapseText" role="button" aria-expanded="false" aria-controls="collapseText">
+                            Открыть полностью
+                        </a>
+                    </p>
+                    </div>
+
+                    <div class="collapse" id="collapseText">
+                        <div class="text__p">
+                            Таким образом сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий. С другой стороны начало повседневной работы по формированию позиции в значительной степени обуславливает создание существенных финансовых и административных условий. Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании направлений прогрессивного развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий.
+                            </div>
+            
+                            <div class="text__p">
+                            Повседневная практика показывает, что рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Равным образом новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+                            </div>
+            
+                            <div class="text__p">
+                            Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки дальнейших направлений развития.
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-block">
+                <section class="comments">
+                    <div class="comments__add">
+                        <div class="text">
+                            <div class="text__title">Отзывы</div>
+                        </div>
+                    </div>
+        
+                    <div class="comments-slider swiper-container">
+                        <div class="comments-slider__wrapper swiper-wrapper d-flex">
+        
+                            <div class="comments-slider__slide swiper-slide">
+                                <div class="comments-slider__slide-item">
+                                    <div class="comments__data text_green">25 ноября 2019</div>
+                                    <div class="comments__title">
+                                        Качество товаров и скорость доставки восхищает!
+                                    </div>
+                                    <div class="comments__text">
+                                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                    </div>
+                                    <div class="comments__user">
+                                        <div class="comments__user-photo">
+                                            <img src="img/user.jpg" alt="user">
+                                        </div>
+                                        <div class="comments__user-name">Константин Хабенский</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="comments-slider__slide swiper-slide">
+                                <div class="comments-slider__slide-item">
+                                    <div class="comments__data text_green">25 ноября 2019</div>
+                                    <div class="comments__title">
+                                        Качество товаров и скорость доставки восхищает!
+                                    </div>
+                                    <div class="comments__text">
+                                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                    </div>
+                                    <div class="comments__user">
+                                        <div class="comments__user-photo">
+                                            <img src="img/user.jpg" alt="user">
+                                        </div>
+                                        <div class="comments__user-name">Константин Хабенский</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="comments-slider__slide swiper-slide">
+                                <div class="comments-slider__slide-item">
+                                    <div class="comments__data text_green">25 ноября 2019</div>
+                                    <div class="comments__title">
+                                        Качество товаров и скорость доставки восхищает!
+                                    </div>
+                                    <div class="comments__text">
+                                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                    </div>
+                                    <div class="comments__user">
+                                        <div class="comments__user-photo">
+                                            <img src="img/user.jpg" alt="user">
+                                        </div>
+                                        <div class="comments__user-name">Константин Хабенский</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="comments-slider__slide swiper-slide">
+                                <div class="comments-slider__slide-item">
+                                    <div class="comments__data text_green">25 ноября 2019</div>
+                                    <div class="comments__title">
+                                        Качество товаров и скорость доставки восхищает!
+                                    </div>
+                                    <div class="comments__text">
+                                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                    </div>
+                                    <div class="comments__user">
+                                        <div class="comments__user-photo">
+                                            <img src="img/user.jpg" alt="user">
+                                        </div>
+                                        <div class="comments__user-name">Константин Хабенский</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="comments-slider__slide swiper-slide">
+                                <div class="comments-slider__slide-item">
+                                    <div class="comments__data text_green">25 ноября 2019</div>
+                                    <div class="comments__title">
+                                        Качество товаров и скорость доставки восхищает!
+                                    </div>
+                                    <div class="comments__text">
+                                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                    </div>
+                                    <div class="comments__user">
+                                        <div class="comments__user-photo">
+                                            <img src="img/user.jpg" alt="user">
+                                        </div>
+                                        <div class="comments__user-name">Константин Хабенский</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="comments-slider__slide swiper-slide">
+                                <div class="comments-slider__slide-item">
+                                    <div class="comments__data text_green">25 ноября 2019</div>
+                                    <div class="comments__title">
+                                        Качество товаров и скорость доставки восхищает!
+                                    </div>
+                                    <div class="comments__text">
+                                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании соответствующий условий активизации.
+                                    </div>
+                                    <div class="comments__user">
+                                        <div class="comments__user-photo">
+                                            <img src="img/user.jpg" alt="user">
+                                        </div>
+                                        <div class="comments__user-name">Константин Хабенский</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="swiper-scrollbar d-none d-md-block"></div>
+                    </div>
+        
+                    <div class="comments__footer d-none d-md-block container1">
+                        Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Повседневная практика показывает
+                    </div>
+        
+                    
+                </section>
+            </div>
+            
+
+            
+        </div>
+        
+        <div class="container1">
+            <div class="text__category">Рекомендуемые товары</div>
+            <hr class="text__hr">
+        </div>
+           
+    </section>
+
+   <section class="tovar1-top">
+        
+
+            <div class="top-slider swiper-container">
+                <div class="top-slider__wrapper swiper-wrapper container1">
+
+                    <div class="top-slider__slide swiper-slide">
+                        <a href="#" class="card">
+                            <div class="card__body">
+                                <div class="card__title">
+                                    Торф Огородник® верховой 9л.
+                                </div>
+                
+                                <div class="card__subtitle">
+                
+                                    <div class="card__stars">
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star1 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star2 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star3 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star4 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star5"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card__price"> 
+                                        <span class=" badge badge-price">213,13 грн.</span> 
+                                    </div>
+                                </div>
+                
+                                <div class="card__img">
+                                
+                                    <img src="img/left.png" alt="товар" class="card__img-item card__img-item_left">
+                
+                                    <img src="img/right.png" alt="товар" class="card__img-item card__img-item_right">
+                
+                                    <img src="img/tovar.png" alt="товар" class="card__img-item card__img-item_center">
+                                </div>
+                
+                                <div class="card__text ">
+                                    Предназначено для выращивания рассады и цветочно-декоративных культур. 
+                                </div>
+                
+                                <button class="card__button">
+                                    <svg class="icon-svg icon-svg-oko oko"><use xlink:href="img/sprite.svg#oko"></use></svg>
+                                    Посмотреть товар
+                                </dbuttoniv>
+                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="top-slider__slide swiper-slide">
+                        <a href="#" class="card">
+                            <div class="card__body">
+                                <div class="card__title">
+                                    Торф Огородник® верховой 9л.
+                                </div>
+                
+                                <div class="card__subtitle">
+                
+                                    <div class="card__stars">
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star1 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star2 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star3 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star4 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star5"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card__price"> 
+                                        <span class=" badge badge-price">213,13 грн.</span> 
+                                    </div>
+                                </div>
+                
+                                <div class="card__img">
+                                
+                                    <img src="img/left.png" alt="товар" class="card__img-item card__img-item_left">
+                
+                                    <img src="img/right.png" alt="товар" class="card__img-item card__img-item_right">
+                
+                                    <img src="img/tovar.png" alt="товар" class="card__img-item card__img-item_center">
+                                </div>
+                
+                                <div class="card__text ">
+                                    Предназначено для выращивания рассады и цветочно-декоративных культур. 
+                                </div>
+                
+                                <button class="card__button">
+                                    <svg class="icon-svg icon-svg-oko oko"><use xlink:href="img/sprite.svg#oko"></use></svg>
+                                    Посмотреть товар
+                                </dbuttoniv>
+                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="top-slider__slide swiper-slide">
+                        <a href="#" class="card">
+                            <div class="card__body">
+                                <div class="card__title">
+                                    Торф Огородник® верховой 9л.
+                                </div>
+                
+                                <div class="card__subtitle">
+                
+                                    <div class="card__stars">
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star1 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star2 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star3 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star4 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star5"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card__price"> 
+                                        <span class=" badge badge-price">213,13 грн.</span> 
+                                    </div>
+                                </div>
+                
+                                <div class="card__img">
+                                
+                                    <img src="img/left.png" alt="товар" class="card__img-item card__img-item_left">
+                
+                                    <img src="img/right.png" alt="товар" class="card__img-item card__img-item_right">
+                
+                                    <img src="img/tovar.png" alt="товар" class="card__img-item card__img-item_center">
+                                </div>
+                
+                                <div class="card__text ">
+                                    Предназначено для выращивания рассады и цветочно-декоративных культур. 
+                                </div>
+                
+                                <button class="card__button">
+                                    <svg class="icon-svg icon-svg-oko oko"><use xlink:href="img/sprite.svg#oko"></use></svg>
+                                    Посмотреть товар
+                                </dbuttoniv>
+                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="top-slider__slide swiper-slide">
+                        <a href="#" class="card">
+                            <div class="card__body">
+                                <div class="card__title">
+                                    Торф Огородник® верховой 9л.
+                                </div>
+                
+                                <div class="card__subtitle">
+                
+                                    <div class="card__stars">
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star1 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star2 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star3 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star4 active"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                
+                                        <div class="card__stars-item">
+                                            <svg class="icon-svg icon-svg-star star5"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card__price"> 
+                                        <span class=" badge badge-price">213,13 грн.</span> 
+                                    </div>
+                                </div>
+                
+                                <div class="card__img">
+                                
+                                    <img src="img/left.png" alt="товар" class="card__img-item card__img-item_left">
+                
+                                    <img src="img/right.png" alt="товар" class="card__img-item card__img-item_right">
+                
+                                    <img src="img/tovar.png" alt="товар" class="card__img-item card__img-item_center">
+                                </div>
+                
+                                <div class="card__text ">
+                                    Предназначено для выращивания рассады и цветочно-декоративных культур. 
+                                </div>
+                
+                                <button class="card__button">
+                                    <svg class="icon-svg icon-svg-oko oko"><use xlink:href="img/sprite.svg#oko"></use></svg>
+                                    Посмотреть товар
+                                </dbuttoniv>
+                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        
+      
+   </section>
+
+   
+
+
+
+</main>
+
+
+    <footer class="footer d-none d-lg-flex">
+
+       <div class="container1">
+
+          <div class="row">
+
+             <div class="footer__address">
+
+                <div class="footer__title1">
+
+                   <h3 class="footer__title">Связаться с нами</h3>
+
+                </div>
+
+    
+
+                <ul type="none" class="footer-text">
+
+    
+
+                   <li class="footer-text__item">
+
+                      <div class="footer-text__icon">
+
+                         <svg class="icon-svg icon-svg-mapa mapa"><use xlink:href="img/sprite.svg#mapa"></use></svg>
+
+                      </div>
+
+                      <div class="footer-text__p">
+
+                         45608, Волинська обл., Луцьк, вул. Ранкова, 26A
+
+                      </div>
+
+                   </li>   
+
+                      
+
+                   <li class="footer-text__item">
+
+                      <div class="footer-text__icon">
+
+                         <svg class="icon-svg icon-svg-phone phone"><use xlink:href="img/sprite.svg#phone"></use></svg>
+
+                      </div>
+
+                      <div class="footer-text__p">
+
+                         <ul type="none" class="footer-text__ul">
+
+                            <li class="footer-text__li">
+
+                               <a href="tel:+38 (050) 954-88-05">+38 (050) 954-88-05</a>
+
+                            </li>
+
+    
+
+                            <li class="footer-text__li">
+
+                               <a href="tel:+38 (067) 715-82-11">+38 (067) 715-82-11</a>
+
+                            </li>
+
+    
+
+                            <li class="footer-text__li">
+
+                               <a href="tel:+38 (0332) 76-90-91">+38 (0332) 76-90-91</a>
+
+                            </li> 
+
+                         </ul>
+
+                      </div>
+
+                   </li> 
+
+    
+
+                   <li class="footer-text__item">
+
+                      <div class="footer-text__icon">
+
+                         <svg class="icon-svg icon-svg-mail mail"><use xlink:href="img/sprite.svg#mail"></use></svg>
+
+                      </div>
+
+                      <div class="footer-text__p">
+
+                         <a href="email:agro_mayster@ukr.net">agro_mayster@ukr.net</a>
+
+                      </div>
+
+                   </li> 
+
+    
+
+                </ul>
+
+             </div>
+
+          
+
+             <div class="footer__menu">
+
+                <div class="footer__title1">
+
+                   <h3 class="footer__title">Меню</h3>
+
+                </div>
+
+                <ul type="none" class="footer-text">
+
+    
+
+                   <li class="footer-text__item"><a href="#">О компании</a></li>   
+
+    
+
+                   <li class="footer-text__item"><a href="#">Контакты</a></li> 
+
+    
+
+                   <li class="footer-text__item"><a href="#">Новости</a></li> 
+
+    
+
+                   <li class="footer-text__item"><a href="#">Акции</a></li> 
+
+    
+
+                   <li class="footer-text__item"><a href="#">Статьи</a></li> 
+
+    
+
+                </ul>
+
+             </div>
+
+    
+
+             <div class="footer__time">
+
+                <div class="footer__title1">
+
+                   <h3 class="footer__title">Время работы</h3>
+
+                </div>
+
+                <div class="footer__subtitle">Понедельник – пятница</div>
+
+                <div class="footer__text">с 9:00 до 18:00</div>
+
+                <div class="footer__subtitle">Суббота – Воскресенье</div>
+
+                <div class="footer__text">с 14:00 до 16:00</div>
+
+             </div>
+
+    
+
+             <div class="footer__social">
+
+                <div class="footer__title1">
+
+    
+
+                   <div class="footer__title-icon">
+
+                      <a href="#">
+
+                         <svg class="icon-svg icon-svg-facebook facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+
+                      </a>
+
+                   </div>
+
+    
+
+                   <div class="footer__title-icon">
+
+                      <a href="#">
+
+                         <svg class="icon-svg icon-svg-instagram instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+
+                      </a>
+
+                   </div>
+
+    
+
+                   <div class="footer__title-icon">
+
+                      <a href="#">
+
+                         <svg class="icon-svg icon-svg-post post"><use xlink:href="img/sprite.svg#post"></use></svg>
+
+                      </a> 
+
+                   </div>
+
+    
+
+                </div>
+
+    
+
+                <a href="index.html">
+
+                   <img src="img/footer__logo.png" alt="footer logo" class="footer__logo">
+
+                </a>
+
+             </div>
+
+              
+
+          </div>
+
+       </div>
+
+    </footer>
+<!-- Vendor scripts plugins -->
+<!-- build:js js/plugins.js -->
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/svg4everybody/dist/svg4everybody.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- endbuild -->
+<!-- Scripts application -->
+<script src="js/script.js" inline></script>
+</body>
+</html>
